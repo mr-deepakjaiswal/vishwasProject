@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media only screen and (max-width: 600px) {
+  .firstHeader{
+    display: flex;
+    flex-direction: column;
+  }
+  .firstHeadeItems p{
+  display: none;
+  }
+  .navbarDiv{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 5px;
+    border: none;
+  }
+  .navbarDiv a {
+    font-size: 1rem;
+  }
+  .thirdHeading{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+  .thirdHeadingLeftSide{
+    display: none;
+  }
+  .thirdHeadingCountrySelector{
+    display: none;
+  }
+  .firstDiv{
+    margin-top: 50px;
+  }
+  .firstDivRightImg{
+    display: none;
+  }
+  .cameraSection{
+    display: flex;
+    flex-direction: column;
+  }
+  .bannerLeftSection{
+    display: none;
+  }
+  .ProductSection{
+    display: flex;
+    flex-direction: column;
+  }
+  .ProductSectionCards{
+    display: flex;
+    flex-direction: column;
+  }
+  .leftSection{
+    display: none;
+  }
+  .rightSection{
+    /* display: none; */
+  }
+  .HandRCards{
+    display: flex;
+    flex-direction: column;
+  }
+ .remoteCard{
+  width: 380px;
+ }
+ .HandDCardDivTimeDiv{
+  display: none;
+ }
+ .dotsDiv{
+  display: none;
+ }
+ .dealsDiv{
+  display: none;
+ }
+ .sellersDownDiv{
+  display: flex;
+  flex-direction: column;
+ }
+ .smartphonesSection{
+  display: flex;
+  flex-direction: column;
+}
+  .cardsSection{
+    display: flex;
+    flex-direction: column;
+  }
+  .smartphonesSecondSection{
+    margin-top: 1300px;
+  }
+  .recentlySecondSection{
+    margin-top: 1100px;
+  }
+  .companiesLogoSection{
+    display: none;
+  }
+  .featuredsection{
+    margin-top: 1100px;
+    display: none;
+  }
+  .formSection{
+    margin-top: 1100px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  .emailDiv{
+    margin-bottom: 20px;
+    width: 250px;
+    height: 100px;
+  }
+  .emailBtn{
+
+  }
+  .footerSection{
+    display: flex;
+    flex-direction: column;
+  }
+}

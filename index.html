@@ -1,0 +1,2498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Rubik;
+      }
+      .navbar {
+        background: linear-gradient(to right, #64a1ff, #6a0877);
+      }
+      .pop {
+        font-family: "poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overflow-x-hidden w-full relative">
+      <!-- 1st header -->
+      <div
+        class="firstHeader flex justify-between items-center h-[50px] border-b-2 pl-[40px] pr-[40px]"
+      >
+        <div class="text-[#7c7c7c]">Welcome to Worldwide Electronics Store</div>
+        <div class="flex gap-2">
+          <div class="firstHeadeItems flex items-center gap-1">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="text-[#334141]">Store Locator</p>
+          </div>
+          <div class="h-[20px] w-0 border flex items-center"></div>
+          <div class="firstHeadeItems flex items-center gap-1">
+            <i class="fas fa-truck"></i>
+            <p class="text-[#334141]">Track Your Order</p>
+          </div>
+          <div class="h-[20px] w-0 border flex items-center"></div>
+          <div class="firstHeadeItems flex items-center gap-1">
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            <p class="text-[#334141]">Repee(IND)</p>
+          </div>
+          <div class="h-[20px] w-0 border flex items-center"></div>
+          <div class="firstHeadeItems flex items-center gap-1">
+            <i class="fa-solid fa-user"></i>
+            <p class="text-[#334141]">Register or Sign in</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd header -->
+      <div
+        class=" navbarDiv pl-[40px] pr-[40px] flex justify-between h-[60px] items-center border-b-2"
+      >
+        <div>
+          <img src="./images/Shinecoder-Logo 1.png" alt="logo not found" />
+        </div>
+        <div class="flex gap-4 font-bold text-[#333e48] text-lg">
+          <div>
+            <a href="#aboutUs" class="text-[#c40edd] hover:text-[#b858e8]"
+              >About Us</a
+            >
+            <div class="flex">
+              <div class="w-[35px] h-[1px] border border-[#700ea1]"></div>
+              <div
+                class="w-1 h-1 border rounded-full border-[#700ea1] bg-[#700ea1] -mt-[2px] -ml-[0.5px]"
+              ></div>
+            </div>
+          </div>
+          <a href="#products">Products</a>
+          <a href="#categories">Categories</a>
+          <a href="#contactUs">Contact Us</a>
+        </div>
+        <div class="flex gap-2 items-center">
+          <div>
+            <img src="./images/Vector.png" alt="not found" />
+          </div>
+          <div class="flex flex-col leading-tight">
+            <div><span>Support </span>+919171208053</div>
+            <div>Email : email@gmail.com</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd header -->
+      <div
+        class="thirdHeading flex justify-between h-[60px] items-center navbar pl-[40px] pr-[40px]"
+      >
+        <div class="items-center gap-2">
+          <p class="font-bold text-white">Shop By Department</p>
+          <i
+            class="fas fa-chevron-down text-[#64a1ff] bg-white border rounded-full mt-1 w-5 h-5 text-center"
+          ></i>
+        </div>
+        <div
+          class="thirdHeadingLeftSide flex bg-white border rounded-full pl-3 pr-0 w-[600px] h-[40px] items-center justify-between"
+        >
+          <input
+            type="text"
+            name="productsSearch"
+            id=""
+            placeholder=" Search for Products"
+          />
+          <div class="flex items-center justify-center">
+            <select name="categories" id="" class="text-[#6B6B6B]">
+              <option value="allCategories" selected hidden>
+                All Categories
+              </option>
+              <option value="mobils">Mobiles</option>
+              <option value="laptops">Laptops</option>
+              <option value="coolers">Coolers</option>
+            </select>
+            <div
+              class="flex items-center justify-center bg-[#333e48] w-[40px] text-center border rounded-full h-[40px]"
+            >
+              <i class="fas fa-search text-white text-xl"></i>
+            </div>
+          </div>
+        </div>
+        <div class="thirdHeadingCountrySelector flex gap-2 items-center">
+          <i class="fas fa-shopping-cart text-3xl text-white"></i>
+          <img src="./images/Group 338966.png" alt="not found" />
+          <div class="flex items-center border rounded-full bg-transparent p-1">
+            <i class="fa-solid fa-globe text-white"></i>
+            <select name="countries" id="" class="bg-transparent text-white">
+              <option value="EN" selected hidden>EN</option>
+              <option value="IND">IND</option>
+              <option value="USA">USA</option>
+              <option value="NEP">NEP</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- shop to get what you love -->
+      <div
+        class="firstDiv bg-[url('./images/backgroundImage1.png')] bg-cover relative w-[1560px]"
+      >
+        <div class="flex pt-6 max-w-[1500px]">
+          <!-- left side -->
+          <div
+            class="w-[600px] text-justify flex flex-col items-center justify-center gap-1"
+          >
+            <p class="font-bold text-[30px] text-[#34BCEC] pl-12">
+              SHOP TO GET WHAT YOU LOVE
+            </p>
+            <pre class="text-[40px] text-[#333E48] -ml-[150px]">TIMEPIECES
+THAT MAKE A 
+STATEMENT
+UP TO <span class="font-black">40% off</span></pre>
+            <div class="pl-[80px] w-[576px]">
+              <button
+                class="bg-[#FFE144] h-[40px] w-[120px] font-bold text-md border rounded-sm"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+
+          <!-- right side -->
+          <img
+            src="./images/banneritemimage 1.png"
+            alt=""
+            class="firstDivRightImg w-[830px] ml-16"
+          />
+        </div>
+
+        <!-- dots -->
+        <div class="flex justify-center gap-2">
+          <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+          <div class="w-3 h-3 border rounded-full bg-[#C40EDD]"></div>
+          <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+        </div>
+      </div>
+
+      <!-- cameras section -->
+      <div class="cameraSection [1440px] grid grid-cols-3 mx-auto mt-4 gap-4">
+        <!-- 1st box -->
+        <div
+          class="flex gap-2 bg-[#f5f5f5] justify-center items-center leading-tight"
+        >
+          <div>
+            <img src="./images/Addsystem 1.png" alt="system not found" />
+          </div>
+          <div class="flex flex-col gap-3">
+            <pre class="text-[24px]">CATCH BIG 
+<span class="font-black">DEALS</span> ON THE 
+CAMERAS</pre>
+            <div class="flex gap-2">
+              <p class="text-[14px] font-bold">Shop Now</p>
+              <img src="./images/heart group.png" alt="not found" />
+            </div>
+          </div>
+        </div>
+        <!-- 2nd box -->
+        <div
+          class="flex gap-2 bg-[#f5f5f5] justify-center items-center leading-tight"
+        >
+          <div>
+            <img src="./images/AddCamera 1.png" alt="system not found" />
+          </div>
+          <div class="flex flex-col gap-3">
+            <pre class="text-[24px]">CATCH BIG 
+<span class="font-black">DEALS</span> ON THE 
+CAMERAS</pre>
+            <div class="flex gap-2">
+              <p class="text-[14px] font-bold">Shop Now</p>
+              <img src="./images/heart group.png" alt="not found" />
+            </div>
+          </div>
+        </div>
+        <!-- 3rd box -->
+        <div
+          class="flex gap-2 bg-[#f5f5f5] justify-center items-center leading-tight"
+        >
+          <div>
+            <img src="./images/Addlaptop 1.png" alt="system not found" />
+          </div>
+          <div class="flex flex-col gap-3">
+            <pre class="text-[24px]">CATCH BIG 
+<span class="font-black">DEALS</span> ON THE 
+CAMERAS</pre>
+            <div class="flex gap-2">
+              <p class="text-[14px] font-bold">Shop Now</p>
+              <img src="./images/heart group.png" alt="not found" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- features section -->
+      <div class="container mx-auto p-4 max-w-[1480px]">
+        <!-- Banner Section -->
+        <div class="flex space-x-4">
+          <div class="bannerLeftSection w-[300px] text-white p-2 rounded-lg">
+            <img src="./images/LeftAdd 1.png" alt="banner not found" />
+          </div>
+
+          <!-- Product Section -->
+          <div class="ProductSection w-75%">
+            <div
+              class="flex border-b border-gray-200 items-center justify-center"
+            >
+              <button
+                class="text-purple-700 text-[20px] font-bold py-2 px-4 border-b-2 border-purple-700"
+              >
+                Featured
+              </button>
+              <button class="text-[#333e48] font-bold text-[20px] py-2 px-4">
+                On Sale
+              </button>
+              <button class="text-[#333e48] font-bold text-[20px] py-2 px-4">
+                Top Rated
+              </button>
+            </div>
+
+            <div class="ProductSectionCards grid-cols-4 gap-4 mt-4">
+              <!-- Product Card 1 -->
+              <div
+                class="max-w-xs bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <img
+                  src="./images/Rectangle 381.png"
+                  alt="cooler"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="p-4">
+                  <h3 class="text-blue-500 text-lg font-semibold">Cooler</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                  <hr class="w-full mt-1" />
+                  <div
+                    class="flex mt-3 text-sm justify-between items-center text-gray-600"
+                  >
+                    <div class="flex flex-col">
+                      <span class="text-[10px]"
+                        >2,71,334 Ratings & 13,230 Reviews</span
+                      >
+                      <span
+                        class="text-[11px] bg-[#f8f1a0] border border-[#ffe500] rounded-full p-2 w-[41px] h-[21px] flex items-center justify-center"
+                        ><i class="fas fa-star text-yellow-500 mr-1"></i
+                        >4.5</span
+                      >
+                    </div>
+                    <img
+                      src="./images/blackHeart.png"
+                      alt="heart not found"
+                      class="h-[26px] w-[26px]"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 2 -->
+              <div
+                class="max-w-xs bg-white rounded-lg h-[350px] shadow-md overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (1).png"
+                  alt="Headphones"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">
+                    Headphones
+                  </h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 3 -->
+              <div
+                class="max-w-xs bg-white rounded-lg shadow-md h-[350px] overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (2).png"
+                  alt="watch"
+                  class="w-full h-48 transform scale-110"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">Watch</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 4 -->
+              <div
+                class="max-w-xs bg-white rounded-lg h-[350px] shadow-md overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (3).png"
+                  alt="Camera"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">Camera</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- all part start -->
+      <div class="grid grid-cols-[300px_1fr] mx-auto pl-10">
+        <!-- left section -->
+        <div class="leftSection">
+          <!-- recently view -->
+          <div class="w-[260px] h-[385px] shadow-lg p-3 -mt-[20px]">
+            <p class="font-bold text-poppins text-[20px] pop">RECENTLY VIEW</p>
+            <hr class="w-[165px] h-[2px] bg-[#0062BD]" />
+
+            <!-- cards -->
+            <div class="flex flex-col gap-3 mt-2 w-[235px]">
+              <!-- card - 1 -->
+              <div class="flex items-center gap-3 border">
+                <div>
+                  <img
+                    src="./images/shoes.png"
+                    alt="shoes not found"
+                    class="w-[57px] h-[57px]"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                    <p class="text-[10px]">Lorem ispum is simply dummy</p>
+                  </div>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card - 2 -->
+              <div class="flex items-center gap-3 border">
+                <div>
+                  <img
+                    src="./images/shoes.png"
+                    alt="shoes not found"
+                    class="w-[57px] h-[57px]"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                    <p class="text-[10px]">Lorem ispum is simply dummy</p>
+                  </div>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card - 3 -->
+              <div class="flex items-center gap-3 border">
+                <div>
+                  <img
+                    src="./images/shoes.png"
+                    alt="shoes not found"
+                    class="w-[57px] h-[57px]"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                    <p class="text-[10px]">Lorem ispum is simply dummy</p>
+                  </div>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card - 4 -->
+              <div class="flex items-center gap-3 border">
+                <div>
+                  <img
+                    src="./images/shoes.png"
+                    alt="shoes not found"
+                    class="w-[57px] h-[57px]"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                    <p class="text-[10px]">Lorem ispum is simply dummy</p>
+                  </div>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- your new season trends -->
+          <img
+            src="./images/newSeason.png"
+            alt="new season image not found"
+            class="w-[260px] h-[250px] mt-6"
+          />
+          <!-- end -->
+
+          <!-- iphone x -->
+          <div class="w-[260px] h-[250px] bg-[#f2f2f2]">
+            <img
+              src="./images/iphone x.png"
+              alt="Iphone X image not found"
+              class="w-[260px] h-[250px] mt-6"
+            />
+          </div>
+          <!-- end -->
+
+          <!-- cherry start -->
+          <div class="w-[260px] h-[342px] bg-[#eee840]">
+            <img
+              src="./images/cherry.png"
+              alt="cherry image not found"
+              class="w-[260px] h-[342px] mt-6"
+            />
+          </div>
+          <!-- cherry end -->
+
+          <!-- top rated start -->
+          <div class="w-[260px] h-[310px] shadow-md mt-6 flex flex-col gap-4">
+            <div>
+              <p class="font-bold text-poppins text-[20px]">TOP RATED</p>
+              <hr class="w-[110px] h-[2px] bg-[#0062BD]" />
+            </div>
+
+            <!-- cards -->
+            <div class="flex flex-col gap-3 mt-2 w-[260px]">
+              <!-- card - 1 -->
+              <div class="flex items-center gap-3">
+                <div>
+                  <img
+                    src="./images/watch2.png"
+                    alt="watch not found"
+                    class="w-[57px] h-[57px]"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                    <p class="text-[10px]">Lorem ispum is simply dummy</p>
+                  </div>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $80.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card - 2 -->
+              <div class="flex items-center gap-3">
+                <div>
+                  <img
+                    src="./images/selfie.png"
+                    alt="selfie not found"
+                    class="w-[57px] h-[57px]"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                    <p class="text-[10px]">Lorem ispum is simply dummy</p>
+                  </div>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $40.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card - 3 -->
+              <div class="flex items-center gap-3">
+                <div>
+                  <img
+                    src="./images/mobile2.png"
+                    alt="mobile not found"
+                    class="w-[57px] h-[57px]"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[10px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                    <p class="text-[10px]">Lorem ispum is simply dummy</p>
+                  </div>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $5.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- top rated end -->
+
+          <!-- armchair Furniture start -->
+          <div class="w-[260px] h-[375px] bg-[#b49898]">
+            <img
+              src="./images/armchairFurniture.png"
+              alt="furniture image not found"
+              class="w-[260px] h-[375px] mt-6"
+            />
+          </div>
+          <!-- armchair Furniture end -->
+
+          <!-- anniversary sale start -->
+          <div class="w-[260px] h-[287px] bg-[#b49898]">
+            <img
+              src="./images/anniversarySale.png"
+              alt="anniversary sale X image not found"
+              class="w-[260px] h-[287px] mt-6"
+            />
+          </div>
+          <!-- anniversary sale end -->
+
+          <!-- chair section start -->
+          <div class="w-[260px] h-[335px] bg-[#ffffff]">
+            <img
+              src="./images/chair.png"
+              alt="chair image not found"
+              class="w-[260px] h-[335px] mt-6"
+            />
+          </div>
+          <!-- chair section end -->
+
+          <!-- new collection start -->
+          <div class="w-[260px] h-[335px] bg-[#000000]">
+            <img
+              src="./images/forKids.png"
+              alt="kids image not found"
+              class="w-[260px] h-[335px] mt-6"
+            />
+          </div>
+          <!-- new collection end -->
+
+          <!-- interior design section start -->
+          <div class="w-[260px] h-[382px] bg-[#36200e]">
+            <img
+              src="./images/interiorDesign.png"
+              alt="Interior not found"
+              class="w-[260px] h-[382px] mt-6"
+            />
+          </div>
+          <!-- interior design section end -->
+
+          <!-- wooden kid toy section start -->
+          <div class="w-[260px] h-[382px] bg-[#bcdee4]">
+            <img
+              src="./images/woodenKidToy.png"
+              alt="woodens not found"
+              class="w-[260px] h-[382px] mt-6"
+            />
+          </div>
+          <!-- wooden kid toy section end -->
+        </div>
+
+        <!-- right part -->
+        <div class="rightSection max-w-[1140px]">
+          <!-- daily deals start-->
+          <div class="mt-8">
+            <p class="font-bold text-poppins text-[28px] pop">DAILY DEALS</p>
+            <hr class="w-[185px] h-[2px] bg-[#0062BD]" />
+
+            <!-- headphone and remote card -->
+            <div class="HandRCards flex gap-4 max-w-[1140px]">
+              <!-- remote -->
+              <div
+                class="w-[560px] h-[260px] mt-5 border rounded-3xl border-[#fed700]"
+              >
+                <div class="remoteCard w-[495px] h-[231px] flex gap-8 p-4">
+                  <div class="remoteCardImgDiv w-[320px] h-[200px] shadow-md">
+                    <img
+                      src="./images/gameRemote.png"
+                      alt="remote not found"
+                      class="w-[280px]"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <div class="leading-tight">
+                      <p class="text-[21px] font-bold text-[#0062DB]">
+                        Game Console Controller + USB3.0 Cable
+                      </p>
+                      <div class="flex gap-2 items-center text-[20px]">
+                        <p class="line-through text-gray-500">₹700.00</p>
+                        <p class="text-lg text-green-500 font-bold">₹50.00</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between">
+                        <p>Available : <span class="font-bold">6</span></p>
+                        <p>Already Sold : <span class="font-bold">28</span></p>
+                      </div>
+                      <div class="w-full h-1 border rounded-full bg-[#d9d9d9]">
+                        <div
+                          class="w-[70px] border- rounded-full h-[3px] bg-yellow-400"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="HandDCardDivTimeDiv">Hurry up! Offers end in:</div>
+                    <div>
+                      <div class="HandDCardDivTimeDiv w-[134px] h-[58px] flex gap-3">
+                        <div class="flex flex-col gap-1">
+                          <div
+                            class="text-black w-[40px] h-[40px] pt-[6px] bg-gray-400 text-center border rounded-full font-bold"
+                          >
+                            6
+                          </div>
+                          <p class="text-[10px] text-center">HOURS</p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                          <div
+                            class="text-black w-[40px] h-[40px] pt-[6px] bg-gray-400 text-center border rounded-full font-bold"
+                          >
+                            12
+                          </div>
+                          <p class="text-[10px] text-center">MINS</p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                          <div
+                            class="text-black w-[40px] h-[40px] pt-[6px] bg-gray-400 text-center border rounded-full font-bold"
+                          >
+                            20
+                          </div>
+                          <p class="text-[10px] text-center">SECS</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- headphones -->
+              <div
+                class="w-[560px] h-[260px] mt-5 border rounded-3xl border-[#fed700]"
+              >
+                <div class="w-[495px] h-[231px] flex gap-8 p-4">
+                  <div class="w-[320px] h-[200px] shadow-md">
+                    <img
+                      src="./images/Headphone.png"
+                      alt="remote not found"
+                      class="w-[280px]"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <div class="leading-tight">
+                      <p class="text-[21px] font-bold text-[#0062DB]">
+                        Game Console Controller + USB3.0 Cable
+                      </p>
+                      <div class="flex gap-2 items-center text-[20px]">
+                        <p class="line-through text-gray-500">₹700.00</p>
+                        <p class="text-lg text-green-500 font-bold">₹50.00</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between">
+                        <p>Available : <span class="font-bold">6</span></p>
+                        <p>Already Sold : <span class="font-bold">28</span></p>
+                      </div>
+                      <div class="w-full h-1 border rounded-full bg-[#d9d9d9]">
+                        <div
+                          class="w-[70px] border- rounded-full h-[3px] bg-yellow-400"
+                        ></div>
+                      </div>
+                    </div>
+                    <div>Hurry up! Offers end in:</div>
+                    <div>
+                      <div class="w-[134px] h-[58px] flex gap-3">
+                        <div class="flex flex-col gap-1">
+                          <div
+                            class="text-black w-[40px] h-[40px] pt-[6px] bg-gray-400 text-center border rounded-full font-bold"
+                          >
+                            6
+                          </div>
+                          <p class="text-[10px] text-center">HOURS</p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                          <div
+                            class="text-black w-[40px] h-[40px] pt-[6px] bg-gray-400 text-center border rounded-full font-bold"
+                          >
+                            12
+                          </div>
+                          <p class="text-[10px] text-center">MINS</p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                          <div
+                            class="text-black w-[40px] h-[40px] pt-[6px] bg-gray-400 text-center border rounded-full font-bold"
+                          >
+                            20
+                          </div>
+                          <p class="text-[10px] text-center">SECS</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- dots -->
+            <div class="dotsDiv flex gap-2 justify-center mt-4">
+              <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+              <div class="w-3 h-3 border rounded-full bg-[#C40EDD]"></div>
+              <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+            </div>
+          </div>
+          <!-- daily deals end -->
+
+          <!-- shop and save big start -->
+          <div class="dealsDiv flex gap-2 w-[1140px] h-[180px] bg-[#f5f5f5] mt-10">
+            <div
+              class="flex flex-col gap-4 w-[870px] justify-center items-start pl-5"
+            >
+              <div class="text-[40px]">
+                SHOP & <span class="font-bold">SAVE BIG</span> ON HOTTEST
+                <span class="font-bold text-[#c40edd]">CAMERA</span>
+              </div>
+              <button
+                class="text-[14px] w-[211px] h-[51px] bg-[#fed700] rounded-lg flex items-center justify-center gap-2"
+              >
+                Starting at <span class="text-[30px] font-bold">₹5555</span>
+              </button>
+            </div>
+            <img
+              src="./images/AddCamera 1.png"
+              alt="camera not found"
+              class="pr-8"
+            />
+          </div>
+          <!-- shop and save big end -->
+
+          <!-- best sellers start -->
+          <div>
+            <!-- above part -->
+            <div class="mt-12">
+              <p class="font-bold text-poppins text-[28px] pop">BEST SELLERS</p>
+              <hr class="w-[200px] h-[2px] bg-[#0062BD]" />
+            </div>
+            <!-- end -->
+
+            <!-- down part -->
+            <div class="sellersDownDiv flex gap-[60px]">
+              <div
+                class="w-[352px] h-[180px] flex gap-3 p-3 border border-[#a7a4a4] rounded-xl mt-6"
+              >
+                <img
+                  src="./images/Rectangle 381 (1).png"
+                  alt="headphone not found"
+                  class="w-[129px] h-[115px]"
+                />
+                <div class="flex flex-col gap-[6px]">
+                  <p class="font-semibold text-[20px] text-[#0062bd]">
+                    Headphones
+                  </p>
+                  <p class="text-[14px]">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      <i class="fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                  <hr class="w-full text-[#cad5d5] ]" />
+                  <div
+                    class="flex -mt-[3px] justify-between items-center text-gray-600"
+                  >
+                    <div class="flex flex-col gap-1">
+                      <span class="text-[8px]"
+                        >2,71,334 Ratings & 13,230 Reviews</span
+                      >
+                      <span
+                        class="text-[9px] bg-[#f8f1a0] border border-[#ffe500] rounded-full p-2 w-[35px] h-[18px] flex items-center justify-center"
+                        ><i
+                          class="fas fa-star text-yellow-500 mr-1 h-[12px] w-[12px]"
+                        ></i
+                        >4.5</span
+                      >
+                    </div>
+                    <img
+                      src="./images/blackHeart.png"
+                      alt="heart not found"
+                      class="h-[21px] w-[21px]"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="w-[328px] h-[115px] flex gap-3 mt-6">
+                <img
+                  src="./images/Rectangle 381 (1).png"
+                  alt="headphone not found"
+                  class="w-[129px] h-[115px]"
+                />
+                <div class="flex flex-col gap-[6px]">
+                  <p class="font-semibold text-[20px] text-[#0062bd]">
+                    Headphones
+                  </p>
+                  <p class="text-[14px]">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      <i class="fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[328px] h-[115px] flex gap-3 mt-6">
+                <img
+                  src="./images/Rectangle 381 (1).png"
+                  alt="headphone not found"
+                  class="w-[129px] h-[115px]"
+                />
+                <div class="flex flex-col gap-[6px]">
+                  <p class="font-semibold text-[20px] text-[#0062bd]">
+                    Headphones
+                  </p>
+                  <p class="text-[14px]">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      <i class="fas fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+          <!-- best sellers end -->
+
+          <!-- dots start -->
+          <div class="dotsDiv flex gap-2 justify-center mt-14">
+            <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+            <div class="w-3 h-3 border rounded-full bg-[#C40EDD]"></div>
+            <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+          </div>
+          <!-- dots end -->
+
+          <!-- smartphones section start -->
+          <div>
+            <div
+              class="smartphonesSection flex border-b border-gray-200 items-center justify-between mt-10"
+            >
+              <div
+                class="text-[28px] font-bold border-b-[2px] border-[#5d79de] py-[2px] pop"
+              >
+                SMARTPHONES
+              </div>
+              <div>
+                <button
+                  class="text-purple-700 py-2 px-4 border-b-2 border-purple-700 text-[20px] font-bold"
+                >
+                  Top 20
+                </button>
+                <button class="text-[#333e48] py-2 px-4 text-[20px] font-bold">
+                  Phone & Tablets
+                </button>
+                <button class="text-[#333e48] py-2 px-4 text-[20px] font-bold">
+                  Laptops & Computers
+                </button>
+                <button class="text-[#333e48] py-2 px-4 text-[20px] font-bold">
+                  Video Cameras
+                </button>
+              </div>
+            </div>
+            <div class="cardsSection flex gap-4 mt-12">
+              <!-- smartphone  -->
+              <div class="leftSection">
+                <img
+                  src="./images/smartphone1.png"
+                  alt="cooler"
+                  class="h-[410px] w-[300px]"
+                />
+              </div>
+
+              <!-- Product Card 1 -->
+              <div
+                class="bg-white h-[400px] rounded-lg shadow-md overflow-hidden"
+              >
+                <img
+                  src="./images/Rectangle 381.png"
+                  alt="cooler"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="p-4">
+                  <h3 class="text-blue-500 text-lg font-semibold">Cooler</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                  <hr class="w-full mt-1" />
+                  <div
+                    class="flex mt-3 text-sm justify-between items-center text-gray-600"
+                  >
+                    <div class="flex flex-col">
+                      <span class="text-[10px]"
+                        >2,71,334 Ratings & 13,230 Reviews</span
+                      >
+                      <span
+                        class="text-[11px] bg-[#f8f1a0] border border-[#ffe500] rounded-full p-2 w-[41px] h-[21px] flex items-center justify-center"
+                        ><i class="fas fa-star text-yellow-500 mr-1"></i
+                        >4.5</span
+                      >
+                    </div>
+                    <img
+                      src="./images/blackHeart.png"
+                      alt="heart not found"
+                      class="h-[26px] w-[26px]"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 2 -->
+              <div
+                class="max-w-xs bg-white rounded-lg h-[350px] shadow-md overflow-hidden"
+              >
+                <img
+                  src="./images/Rectangle 381 (1).png"
+                  alt="Headphones"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="p-4">
+                  <h3 class="text-blue-500 text-lg font-semibold">
+                    Headphones
+                  </h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 3 -->
+              <div
+                class="max-w-xs bg-white rounded-lg shadow-md h-[350px] overflow-hidden"
+              >
+                <img
+                  src="./images/Rectangle 381 (2).png"
+                  alt="watch"
+                  class="w-full h-48 transform scale-110"
+                />
+                <div class="p-4">
+                  <h3 class="text-blue-500 text-lg font-semibold">Watch</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- smartphones section end -->
+
+          <!-- laptop and computers section start -->
+          <div>
+            <div
+              class="flex border-b-2 border-gray-200 items-center justify-between mt-2"
+            >
+              <div
+                class="text-[28px] font-bold border-b-[2px] border-[#5d79de] py-[2px] pop"
+              >
+                LAPTOPS & COMPUTERS
+              </div>
+            </div>
+            <div class="cardsSection flex gap-4 mt-12">
+              <!-- smartphone  -->
+              <div class="leftSection">
+                <img
+                  src="./images/trendingComputer.png"
+                  alt="cooler"
+                  class="h-[410px] w-[290px]"
+                />
+              </div>
+
+              <!-- Product Card 1 -->
+              <div
+                class="bg-white h-[400px] rounded-lg shadow-md overflow-hidden"
+              >
+                <img
+                  src="./images/Rectangle 381.png"
+                  alt="cooler"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="p-4">
+                  <h3 class="text-blue-500 text-lg font-semibold">Cooler</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                  <hr class="w-full mt-1" />
+                  <div
+                    class="flex mt-3 text-sm justify-between items-center text-gray-600"
+                  >
+                    <div class="flex flex-col">
+                      <span class="text-[10px]"
+                        >2,71,334 Ratings & 13,230 Reviews</span
+                      >
+                      <span
+                        class="text-[11px] bg-[#f8f1a0] border border-[#ffe500] rounded-full p-2 w-[41px] h-[21px] flex items-center justify-center"
+                        ><i class="fas fa-star text-yellow-500 mr-1"></i
+                        >4.5</span
+                      >
+                    </div>
+                    <img
+                      src="./images/blackHeart.png"
+                      alt="heart not found"
+                      class="h-[26px] w-[26px]"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 2 -->
+              <div
+                class="max-w-xs bg-white rounded-lg h-[350px] shadow-md overflow-hidden"
+              >
+                <img
+                  src="./images/Rectangle 381 (1).png"
+                  alt="Headphones"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="p-4">
+                  <h3 class="text-blue-500 text-lg font-semibold">
+                    Headphones
+                  </h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 3 -->
+              <div
+                class="max-w-xs bg-white rounded-lg shadow-md h-[350px] overflow-hidden"
+              >
+                <img
+                  src="./images/Rectangle 381 (2).png"
+                  alt="watch"
+                  class="w-full h-48 transform scale-110"
+                />
+                <div class="p-4">
+                  <h3 class="text-blue-500 text-lg font-semibold">Watch</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- laptop and computers section end -->
+
+          <!-- laptop watch section start -->
+          <div class="cardsSection flex gap-4 max-w-[1140px] mt-5">
+            <img
+              src="./images/smartG9.png"
+              alt="smartG9 laptop not found"
+              class="w-[562px]"
+            />
+            <img
+              src="./images/smartG3.png"
+              alt="smart g3 not found"
+              class="w-[562px]"
+            />
+          </div>
+          <!-- laptop watch section end -->
+
+          <!-- laptop computer section 2 start -->
+          <div class="max-w-[1140px] h-[516px]">
+            <!-- heading start -->
+            <div
+              class="cardsSection flex border-b border-gray-200 items-center justify-between mt-14"
+            >
+              <div
+                class="text-[28px] font-bold border-b-[2px] border-[#5d79de] py-[2px] pop"
+              >
+                LAPTOPS & COMPUTERS
+              </div>
+              <div>
+                <button
+                  class="text-purple-700 py-2 px-4 border-b-2 border-purple-700 text-[20px] font-bold"
+                >
+                  Top 20
+                </button>
+                <button class="text-[#333e48] py-2 px-4 text-[20px] font-bold">
+                  Phone & Tablets
+                </button>
+                <button class="text-[#333e48] py-2 px-4 text-[20px] font-bold">
+                  Laptops & Computers
+                </button>
+                <button class="text-[#333e48] py-2 px-4 text-[20px] font-bold">
+                  Video Cameras
+                </button>
+              </div>
+            </div>
+            <!-- heading end -->
+            <!-- card section start -->
+            <div class="cardsSection grid grid-cols-4 gap-4 mt-8">
+              <!-- Product Card 1 -->
+              <div
+                class="max-w-xs bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <img
+                  src="./images/Rectangle 381.png"
+                  alt="cooler"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="p-4">
+                  <h3 class="text-blue-500 text-lg font-semibold">Cooler</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                  <hr class="w-full mt-1" />
+                  <div
+                    class="flex mt-3 text-sm justify-between items-center text-gray-600"
+                  >
+                    <div class="flex flex-col">
+                      <span class="text-[10px]"
+                        >2,71,334 Ratings & 13,230 Reviews</span
+                      >
+                      <span
+                        class="text-[11px] bg-[#f8f1a0] border border-[#ffe500] rounded-full p-2 w-[41px] h-[21px] flex items-center justify-center"
+                        ><i class="fas fa-star text-yellow-500 mr-1"></i
+                        >4.5</span
+                      >
+                    </div>
+                    <img
+                      src="./images/blackHeart.png"
+                      alt="heart not found"
+                      class="h-[26px] w-[26px]"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 2 -->
+              <div
+                class="max-w-xs bg-white rounded-lg h-[350px] shadow-md overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (1).png"
+                  alt="Headphones"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">
+                    Headphones
+                  </h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 3 -->
+              <div
+                class="max-w-xs bg-white rounded-lg shadow-md h-[350px] overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (2).png"
+                  alt="watch"
+                  class="w-full h-48 transform scale-110"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">Watch</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 4 -->
+              <div
+                class="max-w-xs bg-white rounded-lg h-[350px] shadow-md overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (3).png"
+                  alt="Camera"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">Camera</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card section end -->
+            <!-- dots start -->
+            <div class="dotsDiv flex gap-2 justify-center">
+              <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+              <div class="w-3 h-3 border rounded-full bg-[#C40EDD]"></div>
+              <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+            </div>
+            <!-- dots end -->
+          </div>
+          <!-- laptop computer section 2 end -->
+
+          <!-- smartphones section 2 start -->
+          <div class="smartphonesSecondSection w-[1140px] h-[516px]">
+            <!-- heading start -->
+            <div
+              class="flex border-b border-gray-200 items-center justify-between mt-10"
+            >
+              <div
+                class="text-[28px] font-bold border-b-[2px] border-[#5d79de] py-[2px] pop"
+              >
+                SMARTPHONES
+              </div>
+            </div>
+            <!-- heading end -->
+            <!-- card section start -->
+            <div class="cardsSection grid grid-cols-4 gap-4 mt-6">
+              <!-- Product Card 1 -->
+              <div
+                class="max-w-xs bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <img
+                  src="./images/Rectangle 381.png"
+                  alt="cooler"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="p-4">
+                  <h3 class="text-blue-500 text-lg font-semibold">Cooler</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                  <hr class="w-full mt-1" />
+                  <div
+                    class="flex mt-3 text-sm justify-between items-center text-gray-600"
+                  >
+                    <div class="flex flex-col">
+                      <span class="text-[10px]"
+                        >2,71,334 Ratings & 13,230 Reviews</span
+                      >
+                      <span
+                        class="text-[11px] bg-[#f8f1a0] border border-[#ffe500] rounded-full p-2 w-[41px] h-[21px] flex items-center justify-center"
+                        ><i class="fas fa-star text-yellow-500 mr-1"></i
+                        >4.5</span
+                      >
+                    </div>
+                    <img
+                      src="./images/blackHeart.png"
+                      alt="heart not found"
+                      class="h-[26px] w-[26px]"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 2 -->
+              <div
+                class="max-w-xs bg-white rounded-lg h-[350px] shadow-md overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (1).png"
+                  alt="Headphones"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">
+                    Headphones
+                  </h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 3 -->
+              <div
+                class="max-w-xs bg-white rounded-lg shadow-md h-[350px] overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (2).png"
+                  alt="watch"
+                  class="w-full h-48 transform scale-110"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">Watch</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 4 -->
+              <div
+                class="max-w-xs bg-white rounded-lg h-[350px] shadow-md overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (3).png"
+                  alt="Camera"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">Camera</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card section end -->
+            <!-- dots start -->
+            <div class="flex gap-2 justify-center">
+              <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+              <div class="w-3 h-3 border rounded-full bg-[#C40EDD]"></div>
+              <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+            </div>
+            <!-- dots end -->
+          </div>
+          <!-- smartphones section 2 end -->
+
+          <!-- recently views section 2 start -->
+          <div class="recentlySecondSection max-w-[1140px] h-[516px]">
+            <!-- heading start -->
+            <div
+              class="flex border-b border-gray-200 items-center justify-between mt-10"
+            >
+              <div
+                class="text-[28px] font-bold border-b-[2px] border-[#5d79de] py-[2px] font-poppins pop"
+              >
+                RECENTLY VIEWED
+              </div>
+            </div>
+            <!-- heading end -->
+            <!-- card section start -->
+            <div class="cardsSection grid grid-cols-4 gap-4 mt-6">
+              <!-- Product Card 1 -->
+              <div
+                class="max-w-xs bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <img
+                  src="./images/Rectangle 381.png"
+                  alt="cooler"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="p-4">
+                  <h3 class="text-blue-500 text-lg font-semibold">Cooler</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                  <hr class="w-full mt-1" />
+                  <div
+                    class="flex mt-3 text-sm justify-between items-center text-gray-600"
+                  >
+                    <div class="flex flex-col">
+                      <span class="text-[10px]"
+                        >2,71,334 Ratings & 13,230 Reviews</span
+                      >
+                      <span
+                        class="text-[11px] bg-[#f8f1a0] border border-[#ffe500] rounded-full p-2 w-[41px] h-[21px] flex items-center justify-center"
+                        ><i class="fas fa-star text-yellow-500 mr-1"></i
+                        >4.5</span
+                      >
+                    </div>
+                    <img
+                      src="./images/blackHeart.png"
+                      alt="heart not found"
+                      class="h-[26px] w-[26px]"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 2 -->
+              <div
+                class="max-w-xs bg-white rounded-lg h-[350px] shadow-md overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (1).png"
+                  alt="Headphones"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">
+                    Headphones
+                  </h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 3 -->
+              <div
+                class="max-w-xs bg-white rounded-lg shadow-md h-[350px] overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (2).png"
+                  alt="watch"
+                  class="w-full h-48 transform scale-110"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">Watch</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 4 -->
+              <div
+                class="max-w-xs bg-white rounded-lg h-[350px] shadow-md overflow-hidden p-3"
+              >
+                <img
+                  src="./images/Rectangle 381 (3).png"
+                  alt="Camera"
+                  class="w-full h-48 transform scale-100"
+                />
+                <div class="mt-2">
+                  <h3 class="text-blue-500 text-lg font-semibold">Camera</h3>
+                  <p class="text-gray-700">
+                    Serve with mayo and green chili sauce.
+                  </p>
+                  <div class="flex items-center justify-between mt-3">
+                    <p class="text-lg font-bold">₹ 900</p>
+                    <button
+                      class="flex items-center bg-blue-500 text-white px-3 py-2 rounded"
+                    >
+                      Add
+                      <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card section end -->
+            <!-- dots start -->
+            <div class="dotsDiv flex gap-2 justify-center">
+              <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+              <div class="w-3 h-3 border rounded-full bg-[#C40EDD]"></div>
+              <div class="w-3 h-3 border rounded-full bg-[#D9D9D9]"></div>
+            </div>
+            <!-- dots end -->
+          </div>
+          <!-- recently views section 2 end -->
+        </div>
+      </div>
+      <!-- all part end -->
+
+      <!-- companies logo section start -->
+      <div class="companiesLogoSection w-[1560px] h-[250px] bg-[#f5f5f5] mt-6">
+        <div
+          class=" w-[1500px] h-full grid grid-cols-[1fr_1fr_1fr_1fr_1fr_1fr] ml-3"
+        >
+          <div class="flex flex-col gap-3 items-center justify-center">
+            <img
+              src="./images/wimbeldon.png"
+              alt="wimbeldon not found"
+              class="w-[130px] h-[120px]"
+            />
+            <img
+              src="./images/graphicriver.png"
+              alt="graphic river not found"
+              class="w-[200px] h-[60px]"
+            />
+          </div>
+          <div class="flex flex-col gap-3 items-center justify-center">
+            <img
+              src="./images/codecanyon.png"
+              alt="code canyon not found"
+              class="w-[200px] h-[60px]"
+            />
+            <img
+              src="./images/swimmingpool.png"
+              alt="swimming pool not found"
+              class="w-[130px] h-[120px]"
+            />
+          </div>
+          <div class="flex flex-col gap-3 items-center justify-center">
+            <img
+              src="./images/marathon.png"
+              alt="marathon image not found"
+              class="w-[130px] h-[120px]"
+            />
+            <img
+              src="./images/audioJungle.png"
+              alt="audio jungle image not found"
+              class="w-[200px] h-[60px]"
+            />
+          </div>
+          <div class="flex flex-col gap-3 items-center justify-center">
+            <img
+              src="./images/themeForest.png"
+              alt="theme forest image not found"
+              class="w-[200px] h-[60px]"
+            />
+            <img
+              src="./images/yoga.png"
+              alt="yoga image not found"
+              class="w-[130px] h-[120px]"
+            />
+          </div>
+          <div class="flex flex-col gap-3 items-center justify-center">
+            <img
+              src="./images/fitness.png"
+              alt="fitness image not found"
+              class="w-[130px] h-[120px]"
+            />
+            <img
+              src="./images/activeden.png"
+              alt="active den image not found"
+              class="w-[200px] h-[60px]"
+            />
+          </div>
+          <div class="flex flex-col gap-3 items-center justify-center">
+            <img
+              src="./images/docyan.png"
+              alt="docyan image not found"
+              class="w-[200px] h-[60px]"
+            />
+            <img
+              src="./images/gym.png"
+              alt="gym image not found"
+              class="w-[130px] h-[120px]"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- companies logo section end -->
+
+      <!-- featured, On-sale, and top rated products section start -->
+      <div
+        class="featuredsection grid grid-cols-[75%_25%] gap-1 max-w-[1440px] mt-14 mx-auto h-[395px]"
+      >
+        <div class="">
+          <!-- heading start -->
+          <div
+            class="flex border-b text-[28px] font-bold mt-2 justify-between text-[#333e48]"
+          >
+            <div class="flex flex-col">
+              <p class="pop">FEATURED PRODUCTS</p>
+              <div class="w-[60%] border-b-2 border-[#4c7bc7]"></div>
+            </div>
+            <div class="flex flex-col">
+              <p class="pop">ONSALE PRODUCTS</p>
+              <div class="w-[65%] border-b-2 border-[#4c7bc7]"></div>
+            </div>
+            <div class="flex flex-col mr-3">
+              <p class="pop">TOP RATED PRODUCTS</p>
+              <div class="w-[58%] border-b-2 border-[#4c7bc7]"></div>
+            </div>
+          </div>
+          <!-- heading end -->
+
+          <!-- card starts -->
+          <div class="flex mt-8 gap-6 items-center">
+            <div
+              class="flex flex-col gap-6 mt-2 w-[315px] h-[311px] items-center justify-center"
+            >
+              <!-- card - 1 -->
+              <div class="flex items-center gap-3 h-[81px] w-[315px]">
+                <div>
+                  <img
+                    src="./images/mainCamera.png"
+                    alt="watch not found"
+                    class="w-[80px] h-[80px] border rounded-lg"
+                  />
+                </div>
+                <div>
+                  <p class="text-[14px]">Lorem ispum is simply dummy</p>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card - 2 -->
+              <div class="flex items-center gap-3 h-[81px] w-[315px]">
+                <div>
+                  <img
+                    src="./images/dj.png"
+                    alt="watch not found"
+                    class="w-[80px] h-[80px] border rounded-lg"
+                  />
+                </div>
+                <div>
+                  <p class="text-[14px]">Lorem ispum is simply dummy</p>
+
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card - 3 -->
+              <div class="flex items-center gap-3 h-[81px] w-[315px]">
+                <div>
+                  <img
+                    src="./images/smartWatch.png"
+                    alt="watch not found"
+                    class="w-[80px] h-[80px] border rounded-lg"
+                  />
+                </div>
+                <div>
+                  <p class="text-[14px]">Lorem ispum is simply dummy</p>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="h-[311px] w-[1px] bg-[#cad5d5]"></div>
+            <div
+              class="flex flex-col gap-6 mt-2 w-[315px] h-[311px] pl-12 items-center justify-center"
+            >
+              <!-- card - 1 -->
+              <div class="flex items-center gap-3 h-[81px] w-[315px]">
+                <div>
+                  <img
+                    src="./images/smartWatch.png"
+                    alt="watch not found"
+                    class="w-[80px] h-[80px] border rounded-lg"
+                  />
+                </div>
+                <div>
+                  <p class="text-[14px]">Lorem ispum is simply dummy</p>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card - 2 -->
+              <div class="flex items-center gap-3 h-[81px] w-[315px]">
+                <div>
+                  <img
+                    src="./images/blueHeadphone.png"
+                    alt="watch not found"
+                    class="w-[80px] h-[80px] border rounded-lg"
+                  />
+                </div>
+                <div>
+                  <p class="text-[14px]">Lorem ispum is simply dummy</p>
+
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card - 3 -->
+              <div class="flex items-center gap-3 h-[81px] w-[315px]">
+                <div>
+                  <img
+                    src="./images/speaker.png"
+                    alt="watch not found"
+                    class="w-[80px] h-[80px] border rounded-lg"
+                  />
+                </div>
+                <div>
+                  <p class="text-[14px]">Lorem ispum is simply dummy</p>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="h-[311px] w-[1px] bg-[#cad5d5]"></div>
+            <div
+              class="flex flex-col gap-6 mt-2 w-[315px] h-[311px] pl-12 items-center justify-center"
+            >
+              <!-- card - 1 -->
+              <div class="flex items-center gap-3 h-[81px] w-[315px]">
+                <div>
+                  <img
+                    src="./images/mainCamera.png"
+                    alt="watch not found"
+                    class="w-[80px] h-[80px] border rounded-lg"
+                  />
+                </div>
+                <div>
+                  <p class="text-[14px]">Lorem ispum is simply dummy</p>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card - 2 -->
+              <div class="flex items-center gap-3 h-[81px] w-[315px]">
+                <div>
+                  <img
+                    src="./images/speaker.png"
+                    alt="watch not found"
+                    class="w-[80px] h-[80px] border rounded-lg"
+                  />
+                </div>
+                <div>
+                  <p class="text-[14px]">Lorem ispum is simply dummy</p>
+
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-[#858c8e] mr-1"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card - 3 -->
+              <div class="flex items-center gap-3 h-[81px] w-[315px]">
+                <div>
+                  <img
+                    src="./images/smartWatch.png"
+                    alt="watch not found"
+                    class="w-[80px] h-[80px] border rounded-lg"
+                  />
+                </div>
+                <div>
+                  <p class="text-[14px]">Lorem ispum is simply dummy</p>
+                  <div>
+                    <p class="text-[20px] font-semibold text-[#07c030]">
+                      $50.00
+                    </p>
+                  </div>
+                  <div>
+                    <div>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                      <i
+                        class="fas fa-star text-[14px] text-yellow-500 mr-1"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
+        </div>
+        <img
+          src="./images/buds.png"
+          alt="buds image not found"
+          class="w-[350px] h-[410px]"
+        />
+      </div>
+      <!-- featured, On-sale, and top rated products section end -->
+
+      <!-- sign up section start -->
+      <div class="formSection flex navbar mt-12 justify-between pl-10 pr-10 h-[100px]">
+        <div class="flex flex-col justify-center leading-tight">
+          <p class="font-bold text-[30px] text-white">Sign Up To Newsletter</p>
+          <p class="text-[24px]">
+            ...and receive $20 coupon for first shopping.
+          </p>
+        </div>
+        <div
+          class="emailDiv w-[528px] h-[45px] flex flex-row mt-7 items-center justify-center"
+        >
+          <input
+            type="email"
+            placeholder=" Email Address"
+            class="text-[16px] w-[421px] h-[45px] rounded-l-full px-4 py-2 border-t border-b border-l focus:outline-none"
+          />
+          <button
+            type="submit"
+            class=" emailBtn text-[20px] font-bold w-[107px] h-[45px] rounded-r-full bg-yellow-400 text-gray-800 py-2 hover:bg-yellow-500 focus:outline-none"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+      <!-- sign up section end -->
+
+      <!-- footer start -->
+      <footer class="bg-white py-10">
+        <div class="max-w-[1520px] h-[300px] mx-auto">
+          <div class="footerSection max-w-[1440] grid grid-cols-[35%_65%] pl-10">
+            <!-- 1st part  -->
+            <div class="grid grid-rows-2 justify-between">
+              <!-- logos start -->
+              <div class="flex flex-col gap-4">
+                <img
+                  src="./images/Shinecoder-Logo 1.png"
+                  alt="ShineCoder"
+                  class="h-[60px] w-[282px]"
+                />
+                <div class="flex gap-2">
+                  <img
+                    src="./images/Vector.png"
+                    alt="vector not found"
+                    class="w-[47px] h-[47px]"
+                  />
+                  <div>
+                    <p class="text-[20px]">Got Questions? Call Us 24/7!</p>
+                    <p class="font-bold text-[20px]">
+                      (800) 8001-8588, (0600) 874 548
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- logos end -->
+
+              <!-- social contact -->
+              <div class="leading-tight flex flex-col justify-end">
+                <p class="">info@shinecoder.com</p>
+
+                <div class="flex items-end">
+                  <div class="flex flex-col leading-tight">
+                    <p>Follow Us:</p>
+                    <div class="flex space-x-1 w-[147px] h-[28px]">
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-gray-800 w-[28px] h-[28px]"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-gray-800 w-[28px] h-[28px]"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-gray-800 w-[28px] h-[28px]"
+                        ><i class="fab fa-facebook"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="text-gray-600 hover:text-gray-800 w-[28px] h-[28px]"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-[56px] h-[14px] flex items-center justify-end gap-1 mb-[10px] -ml-5"
+                  >
+                    <img
+                      src="./images/indian flag.png"
+                      alt="indian flag not found"
+                      class="w-[19px] h-[14px]"
+                    />
+                    <div class="flex items-end">
+                      <p>IND</p>
+                      <img
+                        src="./images/arrow_drop_down.png"
+                        alt="not found"
+                        class="w-[10px] h-[5px] mb-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- social contact end -->
+            </div>
+            <!-- 1st part end -->
+
+            <!-- right part  -->
+            <div class="flex justify-between pr-10">
+              <!-- 2nd part -->
+              <div>
+                <h3 class="text-[30px] font-bold text-[#333e48] mb-4">
+                  Find It Fast
+                </h3>
+                <ul class="text-[#333e48] space-y-2 text-[16px]">
+                  <li>
+                    <a href="#" class="hover:text-gray-800"
+                      >Laptops & Computers</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-gray-800"
+                      >Cameras & Photography</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-gray-800"
+                      >Smart Phones & Tablets</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-gray-800"
+                      >Video Games & Consoles</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-gray-800">TV & Audio</a>
+                  </li>
+                  <li><a href="#" class="hover:text-gray-800">Gadgets</a></li>
+                </ul>
+              </div>
+              <!-- 2nd part end -->
+
+              <!-- 3rd part -->
+              <div>
+                <ul class="text-[16px] text-[#333e48] space-y-2 mt-[60px]">
+                  <li>
+                    <a href="#" class="hover:text-gray-800">Printers & Ink</a>
+                  </li>
+                  <li><a href="#" class="hover:text-gray-800">Software</a></li>
+                  <li>
+                    <a href="#" class="hover:text-gray-800">Ofiice Supplies</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-gray-800"
+                      >Computer Components</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-gray-800">Accessories</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 3rd part end -->
+
+              <!-- 4th part -->
+              <div class="mr-6">
+                <h3 class="font-bold text-[#333e48] text-[30px] mb-4">
+                  Customer Care
+                </h3>
+                <ul class="text-[#333e48] text-[16px] space-y-2">
+                  <li>
+                    <a href="#" class="hover:text-gray-800">My Account</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-gray-800">Order Tracking</a>
+                  </li>
+                  <li><a href="#" class="hover:text-gray-800">Wishlist</a></li>
+                </ul>
+              </div>
+              <!-- 4th part end -->
+            </div>
+            <!-- right part end -->
+          </div>
+
+          <div class="mt-4 border-t border-[#334141] pt-4">
+            <p class="text-[#333e48] text-[16px] text-center">
+              © 2024 ShineCoder. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+  </body>
+</html>
